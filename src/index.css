@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #0e0e0e;
+  background: #242121;
 }
 
 h1,
@@ -46,5 +46,5 @@ ul {
 
 .btn:hover {
   color: #000;
-  background: rgb(248, 217, 15);
+  background: #667870;
 }

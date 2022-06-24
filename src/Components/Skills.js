@@ -6,8 +6,8 @@ import '../Styles/skills.css'
 const Skills = () => {
  return (
   <section className="section-container">
-   <div className='content-container'>
-    <h1>Skills</h1>
+   <div className='content-container brown-container'>
+    <h1 className='black-header'>Skills</h1>
     <ul className='list-con'>
      <li className="skill-list">
       <IoLogoHtml5 size={35} />
