@@ -1,33 +1,32 @@
 .hero {
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero .content {
-  position: absolute;
-  /* top: 25%; */
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 40%;
-  text-align: left;
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
+
 .hero .content h1 {
   font-size: 4rem;
-  padding: 0.6rem 0 1.5rem;
+  padding-bottom: 0.2rem;
+  justify-content: center;
 }
 .hero .content p {
   font-size: 1.4rem;
-  font-weight: 200;
-  text-transform: uppercase;
-  padding-bottom: 3.5rem;
 }
 
 .content .btn {
   margin: 1rem 0.2rem;
 }
 
-.firstNa {
-  color: #bbb19d;
+.lastNa {
+  color: #a7d129;
 }
 
 @media screen and (max-width: 640px) {
@@ -35,7 +34,7 @@
     font-size: 3rem;
   }
   .hero .content p {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .btn {
     display: inline-block;

@@ -5,6 +5,10 @@
   gap: 1rem;
 }
 
+.nav-con h2 {
+  color: #a7d129;
+}
+
 .mini-nav {
   display: flex;
 }
@@ -23,7 +27,7 @@
 }
 
 .link:hover a {
-  color: rgb(248, 217, 15);
+  color: #a7d129;
 }
 
 @media screen and (max-width: 640px) {

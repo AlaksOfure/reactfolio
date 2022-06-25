@@ -6,13 +6,19 @@ const welcome = () => {
  return (
   <section className="hero">
    <div className='content'>
-    <h1> <span className='firstNa' >Ofure</span>  Alakhume</h1>
-    <p>A front-end React developer</p>
-    <Link to="/about" className='btn'> <span className='btn-text'>About me</span> </Link>
-    <Link to="/project" className='btn'> <span className='btn-text'>Projects</span> </Link>
+    <p className='simple-text color-text-green'>Hi, my name is</p>
+    <h1> <span className='firstNa' >Ofure</span>  <span className='lastNa'>Alakhume</span> </h1>
+    <p className='simple-text-thin'>A front-end software developer</p>
+
+    <button className='btn'>
+     <Link to="/about" > <span className='btn-text'>About me</span> </Link>
+    </button>
    </div>
   </section>
  )
 }
 
 export default welcome
+
+
+

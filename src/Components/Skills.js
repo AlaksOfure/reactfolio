@@ -1,35 +1,63 @@
 import React from 'react'
-import { FaReact } from 'react-icons/fa'
-import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from 'react-icons/io'
+import { FaFigma, FaReact } from 'react-icons/fa'
+import { SiTailwindcss } from 'react-icons/si'
+import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript, IoLogoSass } from 'react-icons/io'
 import '../Styles/skills.css'
 
 const Skills = () => {
  return (
   <section className="section-container">
-   <div className='content-container brown-container'>
+   <div className='content-container '>
     <h1 className='black-header'>Skills</h1>
-    <ul className='list-con'>
-     <li className="skill-list">
-      <IoLogoHtml5 size={35} />
-      <h5>HTML</h5>
-     </li>
 
-     <li className='skill-list'>
-      <FaReact className='reactIcon' size={35} />
-      <h5>React</h5>
-     </li>
+    <div className="lists-con">
 
-     <li className='skill-list'>
-      <IoLogoCss3 size={35} />
-      <h5>Css</h5>
-     </li>
+     <div className="left-con">
+      <ul className='list-con'>
+       <li className="skill-list">
+        <IoLogoHtml5 size={35} />
+        <h5>HTML</h5>
+       </li>
 
-     <li className="skill-list">
-      <IoLogoJavascript size={35} />
-      <h5>Javascript</h5>
-     </li>
+       <li className='skill-list'>
+        <FaReact className='reactIcon' size={35} />
+        <h5>React</h5>
+       </li>
 
-    </ul>
+       <li className='skill-list'>
+        <IoLogoCss3 size={35} />
+        <h5>Css</h5>
+       </li>
+
+       <li className="skill-list">
+        <IoLogoJavascript size={35} />
+        <h5>Javascript</h5>
+       </li>
+
+       <li className="skill-list">
+        <FaFigma size={35} />
+        <h5>Figma</h5>
+       </li>
+
+      </ul>
+     </div>
+
+     <div className="right-con">
+      <ul className='list-con'>
+       <li className="skill-list">
+        <SiTailwindcss size={35} />
+        <h5>Tailwind</h5>
+       </li>
+
+       <li className='skill-list'>
+        <IoLogoSass size={35} />
+        <h5>SASS/SCSS</h5>
+       </li>
+
+
+      </ul>
+     </div>
+    </div>
 
 
    </div>

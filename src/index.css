@@ -13,7 +13,9 @@ body {
 
 h1,
 h2,
+h3,
 h4,
+h5,
 p,
 a {
   color: #fff;
@@ -28,6 +30,21 @@ ul {
 .App {
   padding: 0.5rem 3.5rem;
 }
+
+/* General Typography */
+.simple-text {
+  font-weight: 400;
+}
+.simple-text-thin {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.color-text-green {
+  color: #a7d129;
+}
+
+/* General components */
 
 .btn {
   padding: 12px 32px;
@@ -46,5 +63,5 @@ ul {
 
 .btn:hover {
   color: #000;
-  background: #667870;
+  background: #616f39;
 }

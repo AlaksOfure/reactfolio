@@ -5,7 +5,7 @@ const Projects = () => {
  return (
   <section className='section-container'>
    <div className="content-container">
-    <h1>Projects</h1>
+    <h1>A couple of things i've worked on</h1>
     <ProjectCards />
    </div>
   </section>

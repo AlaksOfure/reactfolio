@@ -6,6 +6,10 @@
   z-index: 10;
 }
 
+.nav-container h1 {
+  color: #a7d129;
+}
+
 .nav-menu {
   display: flex;
 }
