@@ -1,6 +1,7 @@
 .section-container {
   width: 100%;
   height: 100%;
+  padding-bottom: 1rem;
 }
 
 .brown-container {
@@ -14,6 +15,16 @@
   align-items: center;
   padding: 2rem;
   gap: 2rem;
+}
+
+.content-container h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.content-container p {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .skills-container h1 {

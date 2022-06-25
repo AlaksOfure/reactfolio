@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { CgMenuGridR } from "react-icons/cg"
 import { FaTimes } from "react-icons/fa"
 
+
 const Navbar = () => {
 
  const [click, setClick] = useState(false);

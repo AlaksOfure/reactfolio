@@ -1,7 +1,6 @@
 import React from 'react'
 import '../Styles/ProjectCards.css'
-import proj1 from '../assets/Weather-app.png'
-import { NavLink } from 'react-router-dom'
+
 
 import ProjectCardContent from './ProjectCardContent'
 import ProjectData from './ProjectData'
