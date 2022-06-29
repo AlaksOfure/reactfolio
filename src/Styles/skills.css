@@ -84,8 +84,16 @@
 }
 
 @media screen and (max-width: 740px) {
+  .content-container h1 {
+    text-align: center;
+  }
+
   .lists-con {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .skill-list {
+    justify-content: center;
   }
 }
