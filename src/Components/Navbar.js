@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "../Styles/navbar.css"
 import { Link } from 'react-router-dom'
-
-import { CgMenuGridR } from "react-icons/cg"
-import { FaTimes } from "react-icons/fa"
 
 
 const Navbar = () => {
 
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click)
+    // const [click, setClick] = useState(false);
+    // const handleClick = () => setClick(!click)
 
     return (
         <div className="nav-container">
@@ -18,7 +15,7 @@ const Navbar = () => {
                 <Link to="/" >
                     <h1>Alaks</h1>
                 </Link>
-                <ul className={`${click ? "nav-menu active" : "nav-menu"}`} >
+                <ul className="nav-menu" >
                     <li className='link'>
                         <Link to="/" >Home</Link>
                     </li>
@@ -36,14 +33,6 @@ const Navbar = () => {
                     </li>
 
                 </ul>
-
-                <div className="menu-icon" onClick={handleClick}>
-                    {click ? (
-                        <FaTimes size={20} style={{ color: "#fff" }} />
-                    ) : (
-                        <CgMenuGridR size={20} style={{ color: "#fff" }} />
-                    )}
-                </div>
             </div>
         </div>
     )
