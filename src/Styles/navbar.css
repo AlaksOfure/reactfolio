@@ -1,9 +1,15 @@
 .nav-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.nav-content {
+  width: 90%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  z-index: 10;
 }
 
 .nav-container h1 {
