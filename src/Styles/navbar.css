@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  margin: 1rem 0;
 }
 .nav-content {
-  width: 90%;
+  width: 95%;
+  max-width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
 }
 
 .nav-container h1 {
@@ -41,8 +41,9 @@
     align-items: center;
   }
   .nav-menu {
-    display: flex;
-    gap: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
   }
 
   .nav-menu li {

@@ -31,6 +31,21 @@ ul {
   padding: 0.5rem 3.5rem;
 }
 
+.fullpage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* mobile sizing for app */
+@media screen and (max-width: 1040px) {
+  .App {
+    padding: 0.5rem;
+  }
+}
+
 /* General Typography */
 .simple-text {
   font-weight: 400;

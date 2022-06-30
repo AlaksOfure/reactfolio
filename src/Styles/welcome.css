@@ -1,24 +1,24 @@
 .hero {
   height: 100vh;
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .content {
   display: flex;
+  width: 90%;
+  max-width: 90%;
   flex-direction: column;
-  width: 70%;
 }
 
 .hero .content h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   padding-bottom: 0.2rem;
   justify-content: center;
 }
 .hero .content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .content .btn {
@@ -29,7 +29,7 @@
   color: #a7d129;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
   .hero .content h1 {
     font-size: 3rem;
   }

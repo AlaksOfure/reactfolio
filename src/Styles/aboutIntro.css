@@ -7,17 +7,20 @@
 .about-content {
   flex-direction: column;
   display: flex;
-  width: 90%;
-  padding: 2rem;
-  gap: 4rem;
+  width: 95%;
+  padding: 2rem 0;
+  gap: 1rem;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .about-text h1 {
+  color: #a7d129;
+  font-size: 2rem;
   text-transform: uppercase;
   padding: 0.6rem 0 1.5rem;
 }
@@ -25,4 +28,13 @@
   font-size: 1.5rem;
   font-weight: 100;
   padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 740px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  .about-text p {
+    font-size: 1rem;
+  }
 }

@@ -19,7 +19,7 @@ const Skills = () => {
 
                 <div className="lists-con">
 
-                    <div className="left-con">
+                    <div className="skill-con">
                         <ul className='list-con'>
                             <li className="skill-list">
                                 <IoLogoHtml5 size={35} />
@@ -34,7 +34,7 @@ const Skills = () => {
                         </ul>
                     </div>
 
-                    <div className="right-con">
+                    <div className="skill-con">
                         <ul className='list-con'>
 
                             <li className='skill-list'>
@@ -55,7 +55,7 @@ const Skills = () => {
                         </ul>
                     </div>
 
-                    <div className="right-con">
+                    <div className="skill-con">
                         <ul className='list-con'>
                             <li className='skill-list'>
                                 <FaReact className='reactIcon' size={35} />

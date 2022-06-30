@@ -1,21 +1,21 @@
 .section-container {
   display: flex;
   width: 100%;
-  padding-bottom: 1rem;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .content-container {
   display: flex;
-  width: 80%;
-  padding: 2rem;
+  width: 95%;
   flex-direction: column;
 }
 
 .content-container h1 {
   color: #a7d129;
-  font-size: 30px;
+  font-size: 3rem;
   text-transform: uppercase;
   padding: 0.6rem 0 1.5rem;
 }
@@ -28,7 +28,8 @@
 .lists-con {
   display: flex;
   flex-direction: row;
-  gap: 8rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .list-con {
@@ -43,9 +44,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   height: 50px;
   width: 180px;
   gap: 0.5rem;
+}
+.skill-list h5 {
+  font-size: 1.2rem;
 }
 
 .reactIcon {
@@ -85,6 +90,13 @@
     text-align: center;
   }
 
+  .skill-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .lists-con {
     flex-direction: column;
     gap: 2rem;
@@ -92,5 +104,6 @@
 
   .skill-list {
     justify-content: center;
+    text-align: center;
   }
 }
