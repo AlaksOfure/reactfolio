@@ -1,0 +1,25 @@
+.skill-list {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20rem;
+}
+.about-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-col {
+    display: none;
+  }
+}

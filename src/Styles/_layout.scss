@@ -1,0 +1,85 @@
+// .main-container {
+//   // width: 100%;
+//   width: fit-content;
+//   width: -moz-fit-content;
+//   max-width: 124rem;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   padding: 0.5rem 3.5rem;
+//   margin: auto;
+// }
+
+.container {
+  max-width: 124rem;
+  margin: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom: 2.8rem;
+  gap: 2rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2.8rem;
+  gap: 2rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.sub-section-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sub-section-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.img-container {
+  width: 50rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    padding: 1rem 2rem;
+  }
+  .main-container {
+    padding: 0.5rem 1.5rem;
+  }
+  .project-section {
+    gap: 4rem;
+  }
+  .sub-section-col {
+    gap: 2rem;
+  }
+  .sub-section-row {
+    gap: 2rem;
+  }
+  .img-container {
+    width: 100%;
+    height: auto;
+  }
+}

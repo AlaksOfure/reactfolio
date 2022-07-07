@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 
-const Navbar = () => {
+const Navbar2 = () => {
 
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
@@ -103,4 +103,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar2

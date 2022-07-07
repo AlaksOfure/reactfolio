@@ -9,9 +9,9 @@ const Projects = () => {
     })
 
     return (
-        <section ref={sectionRef} className={`section-container ${inView ? "transition" : "hide"}`}>
-            <div className="content-container">
-                <h1>Projects</h1>
+        <section ref={sectionRef} name='Projecthome' className={`container ${inView ? "transition" : "hidden"}`}>
+            <div className="main-section">
+                <h1 className='section-title'>Projects</h1>
                 <ProjectCards />
             </div>
         </section>

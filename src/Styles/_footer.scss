@@ -1,0 +1,21 @@
+.footer {
+  max-height: 50rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+}

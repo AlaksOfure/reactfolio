@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/contact.css'
+
 import { useInView } from 'react-intersection-observer'
 
 const Contact = () => {
@@ -8,15 +8,17 @@ const Contact = () => {
         rootMargin: '-400px 0px',
     })
     return (
-        <section ref={sectionRef} className={`section-container ${inView ? "transition" : "hide"}`}>
-            <div className="content-container text-styling">
-
-                <h1>Get in Touch</h1>
-                <p>I am currently free and open to work, my inbox is always open </p>
-
-                <a href='mailto: alaksdev@gmail.com' className='btn btn-text'> Email Me </a>
-
+        <section name='Contact' ref={sectionRef} className={`section-container ${inView ? "transition" : "hidden"}`}>
+            <div className="main-section" style={{ alignItems: 'center' }}>
+                <h1 className='section-title' style={{ textAlign: 'center' }} >Contact</h1>
+                <p className='section-text' style={{ textAlign: 'center', width: '40rem' }}> I am currently in the process of looking for a job. If you are interested in working with me, please contact me VIA email or connect with me on LinkedIn </p>
+                <a href='mailto: alaksdev@gmail.com' className='btn btn-1'>
+                    <svg>
+                        <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                    </svg>
+                    Email Me </a>
             </div>
+
         </section>
     )
 }

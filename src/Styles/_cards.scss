@@ -1,0 +1,18 @@
+.project-card {
+  display: flex;
+  flex-direction: row;
+  max-height: 30rem;
+
+  //   gap: 5rem;
+}
+
+.card-content {
+  max-height: 30rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .img-container {
+    display: none;
+  }
+}

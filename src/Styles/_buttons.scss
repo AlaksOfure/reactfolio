@@ -1,0 +1,62 @@
+// .btn {
+//   line-height: 5rem;
+//   height: 5rem;
+//   text-align: center;
+//   width: 20rem;
+//   font-size: 1.5rem;
+//   cursor: pointer;
+// }
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-1 {
+  background: darken(#36903d, 1.5%);
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #36903d;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+.btn-1:hover {
+  background: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
