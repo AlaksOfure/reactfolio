@@ -70,7 +70,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
 
-                <div className={
+                <div onClick={() => setNav(false)} className={
                     nav ? "mobile-menu" : "hide"
                 } >
                     <div className="mnav-content">
