@@ -70,7 +70,7 @@ const About = () => {
                             </ul>
                         </div>
 
-                        <Link to='/projects' >
+                        <Link to='/about' >
 
                             <div className="btn btn-1">
                                 <svg>

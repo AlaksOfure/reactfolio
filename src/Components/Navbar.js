@@ -71,30 +71,33 @@ const Navbar = () => {
                 {/* Mobile Menu */}
 
                 <div className={
-                    nav ? "mobile-menu" : "hidden-left"
+                    nav ? "mobile-menu" : "hide"
                 } >
-                    <ul className="mnav-menu transition" >
+                    <div className="mnav-content">
 
-                        <Link to="Home" smooth={true} duration={500} offset={50}>
-                            <li onClick={() => setNav(false)} className='link'>Home
-                            </li>
-                        </Link>
+                        <ul className="mnav-menu" >
 
-                        <Link to="About" smooth={true} duration={500} >
-                            <li onClick={() => setNav(false)} className='link'>About
-                            </li>
-                        </Link>
+                            <Link to="Home" smooth={true} duration={500} offset={50}>
+                                <li onClick={() => setNav(false)} className='link'>Home
+                                </li>
+                            </Link>
 
-                        <Link to="Projecthome" smooth={true} duration={500}>
-                            <li onClick={() => setNav(false)} className='link'>Projects
-                            </li>
-                        </Link>
+                            <Link to="About" smooth={true} duration={500} >
+                                <li onClick={() => setNav(false)} className='link'>About
+                                </li>
+                            </Link>
 
-                        <Link to="Contact" smooth={true} duration={500}>
-                            <li onClick={() => setNav(false)} className='link'>Contact
-                            </li>
-                        </Link>
-                    </ul>
+                            <Link to="Projecthome" smooth={true} duration={500}>
+                                <li onClick={() => setNav(false)} className='link'>Projects
+                                </li>
+                            </Link>
+
+                            <Link to="Contact" smooth={true} duration={500}>
+                                <li onClick={() => setNav(false)} className='link'>Contact
+                                </li>
+                            </Link>
+                        </ul>
+                    </div>
                 </div>
 
 

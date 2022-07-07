@@ -3,6 +3,8 @@ Colors
 
 Grey dark:  #242121
 
+Grey light: #292626
+
 basic Green: #a7d129
 
 */
@@ -11,6 +13,7 @@ basic Green: #a7d129
 
 :root {
   --color-grey-dark: #242121;
+  --color-grey-light: #292626;
 }
 
 * {
@@ -56,14 +59,4 @@ body {
 
 .hidden {
   opacity: 0;
-}
-
-.hidden-left {
-  position: absolute;
-  left: -100%;
-}
-
-.hidden-right {
-  position: absolute;
-  right: -100%;
 }

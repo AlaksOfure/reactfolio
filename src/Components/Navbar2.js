@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
+import { Link as Scroll } from 'react-scroll'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 
@@ -33,7 +34,7 @@ const Navbar2 = () => {
             <div className="nav-content">
 
 
-                <Link to="Home" smooth={true} duration={500} >
+                <Link to="/"  >
 
                     <h1 style={{ color: `${textColor}`, fontSize: '2.5rem' }} >Alaks</h1>
                 </Link>
@@ -42,28 +43,19 @@ const Navbar2 = () => {
 
                 <ul className="nav-menu" >
 
-
-
-                    <Link to="Home" smooth={true} duration={500} >
-                        <li style={{ color: `${textColor}` }} className='link'>Home
+                    <Link to="/">
+                        <li style={{ color: `${textColor}` }} className='link'> Home
                         </li>
                     </Link>
 
-                    <Link to="About" smooth={true} duration={500} >
-                        <li style={{ color: `${textColor}` }} className='link'>About
+                    <Scroll to="Top" smooth={true} duration={500} >
+                        <li style={{ color: `${textColor}` }} className='link'>Back to Top
                         </li>
-                    </Link>
-                    <Link to="Projecthome" smooth={true} duration={500} >
-                        <li style={{ color: `${textColor}` }} className='link'>Projects
-                        </li>
-                    </Link>
-                    <Link to="Contact" smooth={true} duration={500} >
-                        <li style={{ color: `${textColor}` }} className='link'>Contact
-                        </li>
-                    </Link>
+                    </Scroll>
 
                 </ul>
                 {/* Mobile Button */}
+
                 <div className="mobile-btn">
                     {nav ? <AiOutlineClose size={20} style={{ color: `${textColor}` }} onClick={toggleNav} /> : <AiOutlineMenu style={{ color: `${textColor}` }} size={20} onClick={toggleNav} />}
                 </div>
@@ -71,30 +63,24 @@ const Navbar2 = () => {
                 {/* Mobile Menu */}
 
                 <div className={
-                    nav ? "mobile-menu" : "hidden-left"
+                    nav ? "mobile-menu" : "hide"
                 } >
-                    <ul className="mnav-menu transition" >
+                    <div className="mnav-content">
 
-                        <Link to="Home" smooth={true} duration={500} offset={50}>
-                            <li onClick={() => setNav(false)} className='link'>Home
-                            </li>
-                        </Link>
+                        <ul className="mnav-menu" >
 
-                        <Link to="About" smooth={true} duration={500} >
-                            <li onClick={() => setNav(false)} className='link'>About
-                            </li>
-                        </Link>
+                            <Link to="/home">
+                                <li onClick={() => setNav(false)} className='link'>Home
+                                </li>
+                            </Link>
 
-                        <Link to="Projecthome" smooth={true} duration={500}>
-                            <li onClick={() => setNav(false)} className='link'>Projects
-                            </li>
-                        </Link>
+                            <Link to="Top" smooth={true} duration={500} >
+                                <li onClick={() => setNav(false)} className='link'>Back to top
+                                </li>
+                            </Link>
 
-                        <Link to="Contact" smooth={true} duration={500}>
-                            <li onClick={() => setNav(false)} className='link'>Contact
-                            </li>
-                        </Link>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
 
 
