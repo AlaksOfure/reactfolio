@@ -62,22 +62,22 @@ const Navbar2 = () => {
 
                 {/* Mobile Menu */}
 
-                <div className={
+                <div onClick={() => setNav(false)} className={
                     nav ? "mobile-menu" : "hide"
                 } >
                     <div className="mnav-content">
 
                         <ul className="mnav-menu" >
 
-                            <Link to="/home">
+                            <Link to="/">
                                 <li onClick={() => setNav(false)} className='link'>Home
                                 </li>
                             </Link>
 
-                            <Link to="Top" smooth={true} duration={500} >
+                            <Scroll to="Top" smooth={true} duration={500} >
                                 <li onClick={() => setNav(false)} className='link'>Back to top
                                 </li>
-                            </Link>
+                            </Scroll>
 
                         </ul>
                     </div>
